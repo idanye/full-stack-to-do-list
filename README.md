@@ -133,20 +133,21 @@ backend/
 
 ### Task Properties
 
-1. **Title**: A string that represents the task title.
-2. **Description**: A detailed description of the task.
-3. **Due Date**: The deadline for the task.
-4. **Assigned User ID**: ID of the user assigned to the task.
-5. **Priority ID**:
+1. **Task ID**: A string that represents the tasks unique id.
+2. **Title**: A string that represents the task title.
+3. **Description**: A detailed description of the task.
+4. **Due Date**: The deadline for the task.
+5. **Assigned User ID**: ID of the user assigned to the task.
+6. **Priority ID**:
    - 1: Low
    - 2: Medium
    - 3: High
    - 4: Urgent
-6. **Status ID**:
+7. **Status ID**:
    - 1: Draft
    - 2: In Progress
    - 3: On Hold
    - 4: Completed
    - 5: Deleted
-7. **Create Date**: Timestamp when the task was created.
-8. **Update Date**: Timestamp when the task was last updated.
+8. **Create Date**: Timestamp when the task was created.
+9. **Update Date**: Timestamp when the task was last updated.
