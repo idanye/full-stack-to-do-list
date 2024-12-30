@@ -1,0 +1,158 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1a7bea;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px 40px;
+}
+
+/* Tasks Container */
+.tasks {
+  display: flex;
+  gap: 0px 15px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Task Details (Card) */
+.task-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+  width: 300px;
+}
+.task-details h4 {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 1.2em;
+}
+.task-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.task-details .icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+}
+.task-details .icon-container span {
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-details .icon-container span:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+
+/* new workout form */
+.create {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  max-width: 500px;
+}
+.create h3 {
+  margin: 0 0 10px;
+  font-size: 1.25em;
+  color: var(--primary);
+}
+
+label, input, select, textarea {
+  display: block;
+}
+input, select, textarea {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttons {
+  column-gap: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error, select.error, textarea.error {
+  border: 1px solid var(--error);
+}
+
+.edit-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  padding: 20px;
+}
+
+.edit-page .create {
+  width: 400px;
+}
